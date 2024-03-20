@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+</head>
+
+<body>
+    <div class="chat">
+        <div id="wrapper">
+            <div id="menu">
+                <header>
+                    <b>AMID</b>
+                    <div class="btn">
+                        <button title="Configuración" id="conf" onclick="recarga();"><b>⚙</b> </button>
+                        <!-- <button title="Cerrar" onclick="">✖</button> -->
+                    </div>
+                    <br><br>
+                    <div id="config">
+                        <b>Configuración del Asistente</b> <br>
+                        <center>
+                            <div id="asis">
+                                <p>Selecciona el asistente de tu preferencia</p>
+                            </div>
+                        </center>
+                        <p>Volumen:
+                            <input type="range" min="0" max="1" step="0.1" name="volume" id="volume" value="1"></p>
+                        <p>Rapidez:
+                            <input type="range" min="0.1" max="10" step="0.1" name="rate" id="rate" value="1"></p>
+                        <p>Tono:
+                            <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1"></p>
+                        <button title="Guardar Configuración" class="btn" onclick="guardar();">Guardar</button>
+                        <br>
+                    </div>
+                </header>
+                <div style="clear:both"></div>
+            </div>
+
+            <div id="cb">
+            </div>
+
+            <!-- <div name="message" id="msgU">
+                <input name="usermsg" type="text" id="usermsg" />
+                <input name="submitmsg" type="submit" id="submitmsg" value="Send" onclick="mensaje();" />
+            </div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
